@@ -1,9 +1,6 @@
 body{ background-color: blue;}
-    h1{color: pink;}
-a{color:red;}
-p {
+    h1{color: pink;
     font-family:'Times New Roman', Times, serif;
 font-size: 90px;
-color:pink;
 text-align:center;
 }
