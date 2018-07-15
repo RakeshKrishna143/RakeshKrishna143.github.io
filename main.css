@@ -9,3 +9,9 @@ pre{ color : white ;
 }
 p{ color : green ;
     font-size:90px;text-align:center;}
+.heart {
+  background-color: red;
+  height: 30px;
+  transform: rotate(-45deg);
+  width: 30px;
+}
