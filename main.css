@@ -9,14 +9,14 @@ pre{ color : white ;
 }
 p{ color : green ;
     font-size:90px;text-align:center;}
-.heart {
+heart {
   background-color: red;
   height: 30px;
   transform: rotate(-45deg);
   width: 30px;
 }
-.heart:before,
-.heart:after {
+heart:before,
+heart:after {
   content: "";
   background-color: red;
   border-radius: 50%;
@@ -24,7 +24,7 @@ p{ color : green ;
   position: absolute;
   width: 30px;
 }
-.heart:before {
+heart:before {
   top: -15px;
   left: 0;
 }
