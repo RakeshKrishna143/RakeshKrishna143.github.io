@@ -1,4 +1,8 @@
-body{ background-color: pink;}
+body{ 
+    background-image: url("https://media0.giphy.com/media/3o8doSElsBrusFbBny/giphy.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
     h1{color: blue;
     font-family:'Times New Roman', Times, serif;
 font-size: 90px;
