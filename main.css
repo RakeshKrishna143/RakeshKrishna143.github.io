@@ -1,11 +1,8 @@
 
-    h1{color: blue;
-    font-family:'Times New Roman', Times, serif;
-font-size: 90px;
-text-align:center;
+   .bg
+{
+    background-image: url"https://media0.giphy.com/media/3o7TKoWXm3okO1kgHC/200w.webp";
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
-pre{ color : white ;
-    font-size:90px;text-align:center;
-}
-p{ color : green ;
-    font-size:90px;text-align:center;}
