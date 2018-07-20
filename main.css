@@ -1,9 +1,7 @@
-body{heigth:100%;
-}
-.bg
-{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9TGwzgoP5eGy5hcboGC8qtgomDCfZucJf5Fqd3AJqOEs1Bz3J");
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
-}
+body{
+    background-image: url("https://media0.giphy.com/media/3o8doSElsBrusFbBny/giphy.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+    h1{color: pink;
+        border-style:solid; }
