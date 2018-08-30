@@ -15,5 +15,49 @@
 <button onclick="document.getElementById('myImage').src='http://i780.photobucket.com/albums/yy82/Cute_Stuff/Cartoon/CuteKisses1.gif'">Kiss</button>
 <button onclick="document.getElementById('myImage').src='https://media.giphy.com/media/8ZgFoK7N5s0ow/giphy.gif'">Dance</button>
 <p> I don't think its much effective . Plse bare with it .</p>
+  
+<style type="text/css">
+#heartsp {
+ position: relative;
+ width: 100px;
+ height: 90px;
+}
+#heartsp:before, #heartsp:after {
+ position: absolute;
+ content: "";
+ left: 50px;
+ top: 0;
+ width: 50px;
+ height: 80px;
+ background: red;
+ -moz-border-radius: 50px 50px 0 0;
+ border-radius: 50px 50px 0 0;
+ -webkit-transform: rotate(-45deg);
+ -moz-transform: rotate(-45deg);
+ -ms-transform: rotate(-45deg);
+ -o-transform: rotate(-45deg);
+ transform: rotate(-45deg);
+ -webkit-transform-origin: 0 100%;
+ -moz-transform-origin: 0 100%;
+ -ms-transform-origin: 0 100%;
+ -o-transform-origin: 0 100%;
+ transform-origin: 0 100%;
+}
+#heartsp:after {
+ left: 0;
+ -webkit-transform: rotate(45deg);
+ -moz-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ -o-transform: rotate(45deg);
+ transform: rotate(45deg);
+ -webkit-transform-origin: 100% 100%;
+ -moz-transform-origin: 100% 100%;
+ -ms-transform-origin: 100% 100%;
+ -o-transform-origin: 100% 100%;
+ transform-origin :100% 100%;
+}
+</style>
+
+  <div id="heartsp"></div>
 </body>
 </html>
