@@ -1,4 +1,14 @@
-.button{
+.cover-main{
+  background:  url('https://cdn.dribbble.com/users/23582/screenshots/3319553/paper_clip_love.gif') center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kiss-btn,
+.dance-btn,
+.hug-btn,
+.ring-btn{
   margin: 0 auto;
   display: inline-block;
   background: transparent;
@@ -6,5 +16,10 @@
   text-decoration: none;
   padding: 10px 20px;
   border: 1px solid white;
-  
+  transition: .3s;
+}
+.kiss-btn:hover,.dance-btn:hover,.hug-btn:hover
+.ring-btn:hover{
+  background: white;
+  color: black;
 }
