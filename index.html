@@ -2,126 +2,216 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Love you Baby maaa</title>
+    <title></title>
   </head>
   <body>
-    <div class="bg_heart">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:100,300' rel='stylesheet' type='text/css'>
+<div class="cover super-centered-container">
+  <canvas id="can">Get a browser</canvas>
+  <div class="overlay-static">
+    <div class="inline-blocks">
+      <h2 class="twenty-one block">2</h2>
+      <img class="image block" src="red.jpg"><h2 class="twenty-one block"></h2>
+    </div>
+    <h1 class="bday">Advance Happy Birthday <a href="#">Baby maa</a></h1>
+  </div>
 </div>
-<div class="container">
-<h2 id="text1"></h2>
-</div>
-<style>
-  html,body{
-  margin:0px;
-  height:100%;
+<style media="screen">
+
+.inline-blocks > .block{
+display: inline-block;
+vertical-align: middle;
 }
-.bg_heart{
-  position:relative;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
- overflow:hidden;
-  background-image:url("https://images.pexels.com/photos/556667/pexels-photo-556667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-size:100% 100%;
-  z-index:-1;
+.image{
+height: 140px;
+width: 140px;
+border-radius: 180px;
+border: 3px solid #fff;
+margin-top: 22px;
+margin-right: 40px;
+
 }
 
-.container{
-  position:absolute;
-  top:0;
-  left:0;
-  height:100%;
-  width:100%;
-  text-align:center;
-  color:white;
-  font-family:cursive;
+.twenty-one{
+font-size: 240px;
+font-family: 'Josefin Sans';
+font-weight: 100;
+line-height: 180px;
+color: #fff;
+margin: 40px 0;
+}
+
+.bday{
+font-size: 24px;
+color: #fff;
+font-family: 'Josefin Sans';
+font-weight: 300;
+text-align: center;
+}
+
+.cover{
+background: rgba(0,0,0,0.82);
+position: absolute;
+width: 100%;
+height: 100%;
+top:0;
+left: 0;
+z-index: 1000;
+}
+
+#can{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
 }
 
 
-.heart{
-  position:absolute;
-  top:-50%;
-  transform:rotate(-45deg);
-  -webkit-transform:rotate(-45deg);
-  -moz-transform:rotate(-45deg);
-  -m-transform:rotate(-45deg);
-}
-.heart:before{
-  position:absolute;
-  top:-50%;
-  left:0;
-  display:block;
-  content:"";
-  width:100%;
-  height:100%;
-  background:inherit;
-  border-radius:100%;
-}
-.heart:after{
-  position:absolute;
-  top:0;
-  right:-50%;
-  display:block;
-  content:"";
-  width:100%;
-  height:100%;
-  background:inherit;
-  border-radius:100%;
+.super-centered-container{
+display:flex;
+align-items: center;
+justify-content: center;
 }
 
-@keyframes love {
-  0%{top:110%}
-}
-@-webkit-keyframes love {
-  0%{top:110%}
-}
-@-moz-keyframes love {
-  0%{top:110%}
-}
-@-ms-keyframes love {
-  0%{top:110%}
+html,body{
+width: 100%;
+height: 100%;
+margin: 0;
+background:#131313;
+overflow:hidden;
 }
 
+a{
+color: skyblue;
+text-decoration: none;
+}
+
+.overlay-static{
+position: relative;
+z-index: 1000;
+margin-bottom: 100px;
+}
+
+body{
+background: url('bdayimg.jpg');
+background-position: center center;
+background-size: contain;
+}
 </style>
-<script>
-  var love = setInterval(function(){
-  var r_num = Math.floor(Math.random() * 40) + 1;
-	var r_size = Math.floor(Math.random() * 65) + 10;
-	var r_left = Math.floor(Math.random() * 100) + 1;
-	var r_bg = Math.floor(Math.random() * 25) + 100;
-  var r_time = Math.floor(Math.random() * 5) + 5;
-  $('.bg_heart').append("<div class='heart' style='width:"+r_size+"px;height:"+r_size+"px;left:"+r_left+"%;background:rgba(255,"+(r_bg-25)+","+r_bg+",1);-webkit-animation:love "+r_time+"s ease;-moz-animation:love "+r_time+"s ease;-ms-animation:love "+r_time+"s ease;animation:love "+r_time+"s ease'></div>");
+<script type="text/javascript">
 
-  $('.bg_heart').append("<div class='heart' style='width:"+(r_size-10)+"px;height:"+(r_size-10)+"px;left:"+(r_left+r_num)+"%;background:rgba(255,"+(r_bg-25)+","+(r_bg+25)+",1);-webkit-animation:love "+(r_time+5)+"s ease;-moz-animation:love "+(r_time+5)+"s ease;-ms-animation:love "+(r_time+5)+"s ease;animation:love "+(r_time+5)+"s ease'></div>");
+const TwoPI = Math.PI * 2;
+var w = window.innerWidth;
+var h = window.innerHeight;
+var center_x = w / 2;
+var center_y = h / 2;
+
+var colors = ['#FF0000', '#E8D45B', '#8CFF00']
+
+// I know the abs is not needed... but oh well
+var max_distance = Math.abs(Math.max(center_x, center_y));
+var min_distance = Math.abs(Math.min(center_x, center_y));
+function Firefly(){
+this.velocity = 0;
+var random_angle = Math.random() * TwoPI;
+this.x = center_x +  Math.sin(random_angle) * ((Math.random() * (max_distance - min_distance) + min_distance));
+this.y = center_y + Math.cos(random_angle) * ((Math.random() * (max_distance - min_distance) + min_distance));
 
 
-},500);
 
-var i = 0;
-var txt1 = "Hi SweetHeart.....!  <<               Now I want to say something special to you. <<<                So , Please read everything carefully...!                                                                           > When I saw you for the first time < You seems something Special to me.  <<                  As the days goes < you get closer to me....! <<                           I don't know the reason why your thoughts always resonates inside my mind...!                                                     > Everything about you is always intresting for me...!                     << Unkuda romba nallu vazhanum polla eruku dii....!                                                     > Epovo oru vati nee keta, Y do u need the photos of mine ?                    << Here is d rply bae .....  I shouldn't be @ d stranger side ryt when my Daughter ask for her mom childhood pic la ........ atha un pics vachi eruka .... ....!                                                             >Yeah! I Love U <Baby maaa.....! Sandala poda maten dii eni..!   Give me One chance to Prove my Love ...!|                  <<<< ";
-var speed = 50;
-typeWriter();
-function typeWriter() {
-  if (i < txt1.length) {
-     if(txt1.charAt(i)=='<')
-      document.getElementById("text1").innerHTML += '</br>'
-    else if(txt1.charAt(i)=='>')
-      document.getElementById("text1").innerHTML = ''
-    else if(txt1.charAt(i)=='|')
-      {
-        $(".bg_heart").css("background-image","url('https://www.lovedignity.com/wp-content/uploads/2015/11/pictures-of-love-quotes-in-love-quotes-background-hd-wallpaper-of-love-61466.jpg')");
+this.angle_of_attack = Math.atan2(  this.y - center_y ,  this.x - center_x);
+this.vel =  ( Math.random() * 5 ) + 5 ;
 
-      }
-    else
-      document.getElementById("text1").innerHTML += txt1.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
+this.color = colors[ ~~(colors.length * Math.random()) ]
+
+
+this.xvel = this.vel * Math.cos( this.angle_of_attack );
+this.yvel = this.vel * Math.sin( this.angle_of_attack );
+this.size = 2 + Math.random() * 2;
+
+this.phase_diff = Math.random() * TwoPI;
+
 }
+
+
+
+Firefly.prototype.move = function(dt){
+if( isOnHeart(this.x, this.y)){
+  this.size -= 0.001;
+  return;
+}
+this.x += this.xvel * dt;
+this.y += this.yvel * dt;
+}
+
+Firefly.prototype.render = function(ctx, now){
+if( this.size < 1) {
+  return;
+}
+ctx.globalAlpha = Math.max(Math.abs(Math.sin( (now + this.phase_diff) / (~~(this.size * 100)) )), 0.4);
+ctx.fillStyle = this.color;
+ctx.shadowColor = this.color;
+ctx.shadowBlur = 20 / this.size;
+ctx.beginPath();
+ctx.arc( this.x, this.y, this.size, 0, TwoPI, false);
+ctx.closePath();
+ctx.fill();
+}
+
+var max_fireflies = 500;
+var canvas = document.getElementById('can');
+var ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+var fireflies = [];
+
+
+var last = Date.now();
+var dt = 0, now = 0;
+var alive_fireflies = 0;
+var last_emit = 0;
+
+function render(){
+now = Date.now();
+dt = (last - now) / 1000;
+last = now;
+ctx.clearRect(0,0,w,h);
+fireflies.forEach(function(f){
+  f.move(dt);
+  f.render(ctx, now);
+});
+
+fireflies = fireflies.filter(function(f){
+  return (f.size > 1);
+});
+
+alive_fireflies = fireflies.length;
+
+if( alive_fireflies < max_fireflies && last_emit - now < - 100){
+  fireflies.push( new Firefly());
+  last_emit = now;
+}
+
+requestAnimationFrame(render);
+}
+
+
+render();
+
+//
+function isOnHeart(x,y){
+  x = ((x - center_x) / (min_distance * 1.2)) * 1.8;
+  y = ((y - center_y) / (min_distance)) * - 1.8;
+
+  var x2 = x * x;
+  var y2 = y * y;
+  // Simplest Equation of lurve
+  return (Math.pow((x2 + y2 - 1), 3) - (x2 * (y2 * y)) <= 0);
+}
+
 
 </script>
-
   </body>
 </html>
