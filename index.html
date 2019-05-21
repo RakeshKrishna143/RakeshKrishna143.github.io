@@ -1,192 +1,238 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  </head>
-  <body>
-    <h1>Happy Birthday Macha Pramodh</h1>
-<canvas id="birthday"></canvas>
-  </body>
-  <style media="screen">
-    body {
-  margin: 0;
-  background: #020202;
-  cursor: crosshair;
-}
-canvas{display:block}
-h1 {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-family: 'Pacifico', cursive;
-  font-size: 5em;
-  font-weight: 900;
-  -webkit-user-select: none;
-  user-select: none;
-}
-  </style>
-  <script type="text/javascript">
-    // helper functions
-const PI2 = Math.PI * 2
-const random = (min, max) => Math.random() * (max - min + 1) + min | 0
-const timestamp = _ => new Date().getTime()
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Rakesh</title>
+		<link rel="stylesheet" type="text/css" href="./Narayanamurthy_files/main.css">
+		<link rel="icon" href="./Narayanamurthy_files/me.jpg" type="image/gif" sizes="16x16">
+			<!-- Compiled and minified CSS -->
+			<script src="./Narayanamurthy_files/jquery.min.js"></script>
+			<link rel="stylesheet" href="./Narayanamurthy_files/materialize.min.css">
+			<link rel="stylesheet" href="./Narayanamurthy_files/font-awesome.min.css">
+			<!-- Compiled and minified JavaScript -->
+			<script src="./Narayanamurthy_files/materialize.min.js"></script>
+             <link href="./Narayanamurthy_files/icon" rel="stylesheet">
+			 <link href="./Narayanamurthy_files/css" rel="stylesheet" type="text/css">
 
-// container
-class Birthday {
-  constructor() {
-    this.resize()
+		<script src="./Narayanamurthy_files/app.js"></script>
+	</head>
+	<body>
 
-    // create a lovely place to store the firework
-    this.fireworks = []
-    this.counter = 0
+	<div class="row">
+	   <div class="navbar-fixed ">
+		<nav>
+		  <div class="nav-wrapper white lighten-5">
+			<a href="https://narayanamurthy-adhiappan.github.io/#">
+				<img src="./Narayanamurthy_files/me1.jpg" class="responsive-img circle">
+			</a>
+			<ul class="right  hide-on-med-and-down">
+			  <li><a href="https://narayanamurthy-adhiappan.github.io/#about" class="teal-text lighten-1 navTitle">About Me</a></li>
+			  <li><a href="https://narayanamurthy-adhiappan.github.io/#project" class="teal-text lighten-1 navTitle">Projects</a></li>
+			  <li><a href="https://narayanamurthy-adhiappan.github.io/#contact" class="teal-text lighten-1 navTitle">Contact</a></li>
+			</ul>
+			<div id="menuStrip" href="#" class="teal-text align-right right" style="padding-right: 15px;"><i class="material-icons" style=" font-size: 32px;">menu</i> </div>
 
-  }
+		  </div>
+		</nav>
+		<ul id="dropdown1" class="dropdown">
+				<li class="dropDownMenu"><a href="https://narayanamurthy-adhiappan.github.io/#about" class="teal-text lighten-1 navTitle">About Me</a></li><br>
+				<li class="dropDownMenu"><a href="https://narayanamurthy-adhiappan.github.io/#project" class="teal-text lighten-1 navTitle">Projects</a></li><br>
+				<li class="dropDownMenu"><a href="https://narayanamurthy-adhiappan.github.io/#contact" class="teal-text lighten-1 navTitle">contact</a></li>
+		</ul>
+	  </div>
+	</div>
+	<div class="row" id="about">
+			<section class="parallax">
+			</section>
 
-  resize() {
-    this.width = canvas.width = window.innerWidth
-    let center = this.width / 2 | 0
-    this.spawnA = center - center / 4 | 0
-    this.spawnB = center + center / 4 | 0
+	</div>
+	<div class="row" style="padding-top: 10px;">
+		<div class="col s4 m4 l4"></div>
+		<div class="col s4 m4 l4 center-align">
+			<img src="./Narayanamurthy_files/me.jpg" class="responsive-img circle">
+		</div>
+		<div class="col s4 m4 l4"></div>
 
-    this.height = canvas.height = window.innerHeight
-    this.spawnC = this.height * .1
-    this.spawnD = this.height * .5
+	</div>
+	<div class="container">
+	<div class="row">
+		<div class="col s12 m12 l12 center-align">
+			<h4 class="teal-text lighten-1">Hi.</h4>
+		</div>
+		<div class="col s12 m12 l12 center-align">
+			<h4 class="" style="font-weight: bold; font-family: &#39;Berkshire Swash&#39;, Helvetica, sans-serif; color: #545454"><span class="teal-text lighten-1 customTag">&lt;  </span> I'm <span>Murthy</span> <span class="teal-text lighten-1 customTag">  &gt;</span></h4>
+		</div>
+		<div class="col s12 m12 l12 center-align">
+			<p>I am a MEAN Stack web developer based in Chennai,
+			India. I am young and passionate programmer.
+			I am interested in Freelancing for Web development.
+			</p>
+		</div>
+	</div>
+	</div>
+	<div class="row">
 
-  }
+	</div>
+	<div class="row">
+		<div class="col s12 m12 l12 center-align">
+			<h4 class="teal-text lighten-1">What I'm ?</h4>
+		</div>
+	</div>
+	<div class="">
+		<div class="row">
+			<div class="col s12 m4 l4 center-align">
+				<img src="./Narayanamurthy_files/coding.jpg" class="responsive-img circle">
+			</div>
+			<div class="col s12 m2 l2 center-align">
 
-  onClick(evt) {
-     let x = evt.clientX || evt.touches && evt.touches[0].pageX
-     let y = evt.clientY || evt.touches && evt.touches[0].pageY
+			</div>
+			<div class="col s12 m6 l6 center-align">
+				<h5 class="teal-text lighten-1">What I do when I'm free?</h5>
+				<p>
 
-     let count = random(3,5)
-     for(let i = 0; i < count; i++) this.fireworks.push(new Firework(
-        random(this.spawnA, this.spawnB),
-        this.height,
-        x,
-        y,
-        random(0, 260),
-        random(30, 110)))
-
-     this.counter = -1
-
-  }
-
-  update(delta) {
-    ctx.globalCompositeOperation = 'hard-light'
-    ctx.fillStyle = `rgba(20,20,20,${ 7 * delta })`
-    ctx.fillRect(0, 0, this.width, this.height)
-
-    ctx.globalCompositeOperation = 'lighter'
-    for (let firework of this.fireworks) firework.update(delta)
-
-    // if enough time passed... create new new firework
-    this.counter += delta * 3 // each second
-    if (this.counter >= 1) {
-      this.fireworks.push(new Firework(
-        random(this.spawnA, this.spawnB),
-        this.height,
-        random(0, this.width),
-        random(this.spawnC, this.spawnD),
-        random(0, 360),
-        random(30, 110)))
-      this.counter = 0
-    }
-
-    // remove the dead fireworks
-    if (this.fireworks.length > 1000) this.fireworks = this.fireworks.filter(firework => !firework.dead)
-
-  }
-}
-
-class Firework {
-  constructor(x, y, targetX, targetY, shade, offsprings) {
-    this.dead = false
-    this.offsprings = offsprings
-
-    this.x = x
-    this.y = y
-    this.targetX = targetX
-    this.targetY = targetY
-
-    this.shade = shade
-    this.history = []
-  }
-  update(delta) {
-    if (this.dead) return
-
-    let xDiff = this.targetX - this.x
-    let yDiff = this.targetY - this.y
-    if (Math.abs(xDiff) > 3 || Math.abs(yDiff) > 3) { // is still moving
-      this.x += xDiff * 2 * delta
-      this.y += yDiff * 2 * delta
-
-      this.history.push({
-        x: this.x,
-        y: this.y
-      })
-
-      if (this.history.length > 20) this.history.shift()
-
-    } else {
-      if (this.offsprings && !this.madeChilds) {
-
-        let babies = this.offsprings / 2
-        for (let i = 0; i < babies; i++) {
-          let targetX = this.x + this.offsprings * Math.cos(PI2 * i / babies) | 0
-          let targetY = this.y + this.offsprings * Math.sin(PI2 * i / babies) | 0
-
-          birthday.fireworks.push(new Firework(this.x, this.y, targetX, targetY, this.shade, 0))
-
-        }
-
-      }
-      this.madeChilds = true
-      this.history.shift()
-    }
-
-    if (this.history.length === 0) this.dead = true
-    else if (this.offsprings) {
-        for (let i = 0; this.history.length > i; i++) {
-          let point = this.history[i]
-          ctx.beginPath()
-          ctx.fillStyle = 'hsl(' + this.shade + ',100%,' + i + '%)'
-          ctx.arc(point.x, point.y, 1, 0, PI2, false)
-          ctx.fill()
-        }
-      } else {
-      ctx.beginPath()
-      ctx.fillStyle = 'hsl(' + this.shade + ',100%,50%)'
-      ctx.arc(this.x, this.y, 1, 0, PI2, false)
-      ctx.fill()
-    }
-
-  }
-}
-
-let canvas = document.getElementById('birthday')
-let ctx = canvas.getContext('2d')
-
-let then = timestamp()
-
-let birthday = new Birthday
-window.onresize = () => birthday.resize()
-document.onclick = evt => birthday.onClick(evt)
-document.ontouchstart = evt => birthday.onClick(evt)
-
-  ;(function loop(){
-  	requestAnimationFrame(loop)
-
-  	let now = timestamp()
-  	let delta = now - then
-
-    then = now
-    birthday.update(delta / 1000)
+				I love Programming @ Code Academy, Hackerrank, Techgig, solving Project Euler Problems
 
 
-  })()
-  </script>
-</html>
+				</p>
+			</div>
+		</div>
+		<div class="row" style="padding-top: 20px;">
+			<div class="col s12 m6 l6 center-align">
+				<h5 class="teal-text lighten-1">What I know in web development?</h5>
+				<p>
+					I can develop some cool website using Html, Css, Materializecss, javascript, Jquery, Angular JS, PHP, Python.
+				</p>
+			</div>
+			<div class="col s12 m2 l2"></div>
+			<div class="col s12 m4 l4 center-align">
+				<img src="./Narayanamurthy_files/webdevelopment.jpg" class="responsive-img circle">
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s12 m12 l12 center-align">
+			<h4 class="teal-text lighten-1">What Technologies I can work ?</h4>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col s3 m3 l3 center-align">
+				<img src="./Narayanamurthy_files/C.jpg" class="responsive-img circle">
+			</div>
+			<div class="col s3 m3 l3 center-align">
+				<img src="./Narayanamurthy_files/c++.jpg" class="responsive-img circle">
+			</div>
+			<div class="col s3 m3 l3 center-align">
+				<img src="./Narayanamurthy_files/python.jpg" class="responsive-img circle">
+			</div>
+			<div class="col s3 m3 l3 center-align">
+				<img src="./Narayanamurthy_files/javascript.jpg" class="responsive-img circle">
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col s3 m3 l3 center-align">
+				<img src="./Narayanamurthy_files/html.jpg" class="responsive-img circle">
+			</div>
+			<div class="col s3 m3 l3 center-align">
+				<img src="./Narayanamurthy_files/css.jpg" class="responsive-img circle">
+			</div>
+			<div class="col s3 m3 l3 center-align">
+				<img src="./Narayanamurthy_files/materialize.jpg" class="responsive-img circle">
+			</div>
+			<div class="col s3 m3 l3 center-align">
+				<img src="./Narayanamurthy_files/bootstrap.jpg" class="responsive-img circle">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s3 m3 l3 center-align">
+				<img src="./Narayanamurthy_files/jquery.jpg" class="responsive-img circle">
+			</div>
+			<div class="col s3 m3 l3 center-align">
+				<img src="./Narayanamurthy_files/angular.jpg" class="responsive-img circle">
+			</div>
+			<div class="col s3 m3 l3 center-align">
+				<img src="./Narayanamurthy_files/java.jpg" class="responsive-img circle">
+			</div>
+		</div>
+	</div>
+	<div id="project"></div>
+	<div class="row">
+		<div class="col s12 m12 l12 center-align">
+			<h4 class="teal-text lighten-1">What I have done so far?</h4>
+		</div>
+	</div>
+
+	<div class="row">
+			<div class="col s12 m4 l4 center-align">
+				<img src="./Narayanamurthy_files/project3.jpg" class="responsive-img circle">
+			</div>
+			<div class="col s12 m2 l2"></div>
+			<div class="col s12 m6 l6 center-align">
+				<h5 class="teal-text lighten-1">Project #01 -  <span style="font-weight: bold; font-family: &#39;Berkshire Swash&#39;, Helvetica, sans-serif; color: #545454">Time Limit </span></h5>
+				<p>
+					Time Limit is a web application which makes you productive by keeping track of your
+					time. It was based on the concept of pomodoro technique.
+
+				</p>
+			</div>
+	</div>
+	<div class="row">
+
+
+			<div class="col s12 m6 l6 center-align">
+				<h5 class="teal-text lighten-1">Project #02 -  <span style="font-weight: bold; font-family: &#39;Berkshire Swash&#39;, Helvetica, sans-serif; color: #545454">Exam Pdf Parser</span></h5>
+				<p>
+					Exam parser is web application which take pdf as input and convert into html and extract the data using DOM PHP and store the data in Database.
+				</p>
+			</div>
+			<div class="col s12 m2 l2"></div>
+			<div class="col s12 m4 l4 center-align">
+				<img src="./Narayanamurthy_files/project2.jpg" class="responsive-img circle">
+			</div>
+	</div>
+	<div class="row" id="contact">
+		<div class="col s12 m12 l12 center-align">
+			<h4 class="teal-text lighten-1">How can you contact Me?</h4>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l12 center-align">
+				<p>
+					Now I'm available for freelancing. If you need me in your project you can contact me.
+				</p>
+			</div>
+			<div class="col s12 m12 l12 center-align">
+				<a href="mailto:n777rayanamurthy@gmail.com" class="waves-effect waves-light btn">Contact Me<i class="material-icons">email</i></a>
+			</div>
+		</div>
+	</div>
+	<div class="row teal accent-1">
+		<div class="col s12 m12 l12">
+			<div class="row" style="padding-top: 20px;">
+				<div class="col s4 m4 l4 center-align" style="padding: 10px;">
+					<a href="https://plus.google.com/108533024946651638271">
+						<img src="./Narayanamurthy_files/googleplus.jpg" class="responsive-img circle">
+					</a>
+				</div>
+				<div class="col s4 m4 l4 center-align" style="padding: 10px;">
+					<a href="https://www.linkedin.com/in/narayana-murthy-a927a7102/">
+						<img src="./Narayanamurthy_files/linkedin.jpg" class="responsive-img circle">
+					</a>
+				</div>
+				<div class="col s4 m4 l4 center-align" style="padding: 10px;">
+					<a href="https://github.com/Narayanamurthy-adhiappan">
+						<img src="./Narayanamurthy_files/github.jpg" class="responsive-img circle">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col s12 m12 l12 teal-text center-align" style="padding: 10px;">
+			©2017 <span style="text-decoration: underline">Narayanamurthy.</span> All rights Reserved
+		</div>
+	</div>
+
+
+
+
+<div class="hiddendiv common"></div></body></html>
